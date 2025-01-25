@@ -20,9 +20,23 @@
         url(../fonts/TTLakes-Bold.woff);
 } 
 
-/* body {
-    box-shadow: 50px 3px 8px rgba(0, 0, 0, 0.2);
-} */
+.cross {
+    background-image: url(../img/cross.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    background-image: url(../img/Group.svg);
+    width: 97px;
+    height: 51px;
+}
+
+.search {
+    background-image: url(../img/search.svg);
+    width: 40px;
+    height: 40px;
+}
 
 .header__nav {
 display: flex;
@@ -33,11 +47,22 @@ background-color:#FFFFFF
 
 .header__nav-menu {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     gap: 16px;
 }
 
+/* .header__nav-menu button {
+    margin-left: px;
+} */
+
+.cross:hover, .search:hover{
+    border: 3px solid #62cbc2;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
 
 .aside {
     max-width: 320px;
@@ -70,6 +95,27 @@ background-color:#FFFFFF
     
 }
 
+
+
+.call {
+    background-image: url(../img/call.svg);
+    width: 40px;
+    height: 40px;
+    background-repeat:no-repeat
+}
+
+.chat {
+    background-image: url(../img/chat.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.profile {
+    background-image: url(../img/profile.svg);
+    width: 40px;
+    height: 40px;
+}
+
 .nav__list a:hover:before{
     content: url(../img/highlight_mobile.svg);
     position: relative;
@@ -86,18 +132,23 @@ background-color:#FFFFFF
     gap: 16px;
     margin-left: 15px;
     align-items: center;
+    justify-content: space-around;
+    
 
 }
 
 .footer__list button{
-    position: relative;
-    
+ width: 40px;
+ height: 40px;
 }
 
 .footer__list button:hover{
     border: 3px solid #62cbc2;
     border-radius: 100px;
-    max-width: 40px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    
 
 }
 
@@ -116,7 +167,7 @@ background-color:#FFFFFF
     display: block;
 }
 
-.footer__lang p {
+.footer__lang button {
     font-family: 'TT Lakes';
     font-style: italic;
     margin-left: 45px;
@@ -130,7 +181,7 @@ background-color:#FFFFFF
 
 }
 
-.footer__lang p:hover {
+.footer__lang button:hover {
     color: #7E7E82;
 }
 
