@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'TT Lakes'; 
+    font-style: normal;
+		src: local('TT Lakes'),
+        url(../fonts/TTLakes-Medium.woff); 
+}
+
+@font-face {
+	font-family: 'TT Lakes'; 
+    font-style:italic;
+
+		src: local('TT Lakes'),
+        url(../fonts/TTLakes-Regular.woff); 
+}
+
+@font-face {
+	font-family: 'TT Lakes'; 
+    font-style: bold;
+		src: local('TT Lakes'),
+        url(../fonts/TTLakes-Bold.woff);
+} 
+
+/* body {
+    box-shadow: 50px 3px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.header__nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color:#FFFFFF
+}
+
+.header__nav-menu {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.aside {
+    max-width: 320px;
+    height: 100vh ;
+    box-shadow:  50px 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 16px 24px;
+    max-width: 320px;
+    }
+
+.main {
+    max-width: 320px;
+    /* height: 100vh; */
+
+}
+
+.nav__list{
+    margin-top: 35px;
+}
+
+.nav__list li{
+    display: flex;
+    font-family: 'TT Lakes';
+    font-style: italic;
+    height: 46px;
+    padding:  8px 16px;
+    color: #000;
+    
+}
+
+.nav__list li:hover:before{
+    content: url(../img/highlight_mobile.svg);
+    position: relative;
+    right: 35px;
+}
+
+.nav__list li:hover {
+    padding:  8px 12px;
+    color: #7E7E82;
+}
+
+.footer__list {
+    display: flex;
+    gap: 16px;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.footer__list li{
+    position: relative;
+    top: 20px;
+}
+
+.footer__mail p {
+    font-family: 'TT Lakes';
+    font-style: italic;
+    margin-left: 45px;
+    margin-top: 16px;
+}
+
+.footer__number p {
+    font-family: 'TT Lakes';
+    font-style: bold;
+    margin-left: 45px;
+    margin-top: 16px;
+}
+
+.footer__lang p {
+    font-family: 'TT Lakes';
+    font-style: italic;
+    margin-left: 45px;
+
+}
+
+.footer__lang {
+    display: flex;
+    margin-bottom: 32px;
+    margin-top: 30px;
+
+}
+
+.footer__lang p:hover {
+    color: #7E7E82;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
