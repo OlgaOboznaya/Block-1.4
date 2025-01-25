@@ -60,7 +60,7 @@ background-color:#FFFFFF
     margin-top: 35px;
 }
 
-.nav__list li{
+.nav__list a{
     display: flex;
     font-family: 'TT Lakes';
     font-style: italic;
@@ -70,13 +70,13 @@ background-color:#FFFFFF
     
 }
 
-.nav__list li:hover:before{
+.nav__list a:hover:before{
     content: url(../img/highlight_mobile.svg);
     position: relative;
     right: 35px;
 }
 
-.nav__list li:hover {
+.nav__list a:hover {
     padding:  8px 12px;
     color: #7E7E82;
 }
@@ -85,26 +85,35 @@ background-color:#FFFFFF
     display: flex;
     gap: 16px;
     margin-left: 15px;
-    margin-top: 40px;
+    align-items: center;
+
 }
 
-.footer__list li{
+.footer__list button{
     position: relative;
-    top: 20px;
+    
 }
 
-.footer__mail p {
+.footer__list button:hover{
+    border: 3px solid #62cbc2;
+    border-radius: 100px;
+    max-width: 40px;
+
+}
+
+.footer__mail a {
     font-family: 'TT Lakes';
     font-style: italic;
     margin-left: 45px;
     margin-top: 16px;
 }
 
-.footer__number p {
+.footer__number a {
     font-family: 'TT Lakes';
     font-style: bold;
     margin-left: 45px;
-    margin-top: 16px;
+    margin-top: 12px;
+    display: block;
 }
 
 .footer__lang p {
@@ -116,8 +125,8 @@ background-color:#FFFFFF
 
 .footer__lang {
     display: flex;
-    margin-bottom: 32px;
-    margin-top: 30px;
+    margin-bottom: 16px;
+    margin-top: 32px;
 
 }
 
